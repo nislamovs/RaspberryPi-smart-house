@@ -1,0 +1,36 @@
+<div>
+	<p>Check the functionality.</p>
+    <button ng-click="ledOn()">Led ON</button><br>
+    <button ng-click="ledOff()">Led OFF</button><br>
+    <button ng-click="relayOn()">Relay ON</button><br>
+    <button ng-click="relayOff()">Relay OFF</button><br>
+    <button ng-click="consoleGo()">Launch Console app</button>{{ date }}<br>
+    <button ng-click="getTemp()">Get temperature</button>{{ temp }}<br>
+
+    <div class="col-md-6 col-md-offset-3">
+        <h3>LCD test</h3>
+        <div class="col-md-6 col-md-offset-3">
+            <form name="form" ng-submit="sendlcdmsg()" role="form">
+                <div class="form-group">
+                    <label for="text">First line:</label>
+                    <input name="text" id="text" class="form-control" ng-model="lcdtext1" />
+                </div>
+                <div class="form-group">
+                    <label for="text">Second line:</label>
+                    <input name="text" id="text" class="form-control" ng-model="lcdtext2" />
+                </div>
+                <div class="form-group">
+                    <label for="text">Third line:</label>
+                    <input name="text" id="text" class="form-control" ng-model="lcdtext3" />
+                </div>
+                <div class="form-group">
+                    <label for="text">Forth line:</label>
+                    <input name="text" id="text" class="form-control" ng-model="lcdtext4" />
+                    <button type="submit" class="btn btn-primary">Commit</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>

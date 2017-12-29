@@ -1,0 +1,17 @@
+
+<div>
+    <table>
+      <tr>
+          <th>ID</th>
+          <th>Device</th>
+          <th>Data</th>
+          <th>Event date</th>
+      </tr>
+      <tr ng-repeat="event in events | orderBy: 'id':true ">
+        <td>{{ event.id }}</td>
+        <td>{{ event.device }}</td>
+        <td>{{ event.data }}</td>
+        <td>{{ event.event_date }}</td>
+      </tr>
+    </table>
+</div>
